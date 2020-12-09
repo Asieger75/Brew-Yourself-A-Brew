@@ -1,4 +1,4 @@
-# Brew- Yourself A Brew
-an app to introduce you to what might become your new favorite drink!
+#Find a Furry Friend 
+an app to introduce you to what might become your new best friend!
 
-This applicatin aims to help the user(s) search for ingredeients as well as ideas to make a fancey beverage of their choice.  We have set up an API  that will provide users with GoogleMap searches that will help users find the nearest ABC, Harris Teeter or other establishments that serve alcaholic beverages.  
+This applicatin aims to help the user(s) search for a new pet as well as what type of animal choice to get(Cat or Dog), the animal's gender, breed and location. We have set up an API that will provide users with GoogleMap searches that will help users find locations for a pet store to find their new furry friend.
