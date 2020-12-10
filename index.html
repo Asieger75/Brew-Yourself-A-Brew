@@ -159,33 +159,25 @@
   </div>
 
   <footer class="page-footer teal">
+      <div class="veth1">
+            <h1>Find a veterinarian near you! </h1>
+        </div>
+        
+        <input
+        id="pac-input"
+        class="controls"
+        type="text"
+        placeholder="Search Box"
+      />
+      <div id="map"></div>
+
+        <hr>
+          
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Group Bio</h5>
-          <p class="grey-text text-lighten-4">Hi! We're William, Maddison, Jerquanus and Josh, the makers of this site! We hope that this class project of ours can help you improve your life by introducing someone to love!</p>
-
-          <div id="map"></div>
-          
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="groupBio">
+          <h5>Group Bio</h5>
+          <p class="text-lighten-4">Hi! We're William, Maddison, Jerquanus and Josh, the makers of this site! We hope that this class project of ours can help you improve your life by introducing someone to love!</p>
         </div>
       </div>
     </div>
@@ -204,11 +196,12 @@
   <script src="js/init.js"></script>
   <script src="javascript/code.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcj42SoFm8w9wO8kM57zag4-FSE5isyuM&callback=initMap&libraries=&v=weekly"
-    defer
-  ></script>
-  </body>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcj42SoFm8w9wO8kM57zag4-FSE5isyuM&callback=initAutocomplete&libraries=places&v=weekly"
+      defer
+    ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcj42SoFm8w9wO8kM57zag4-FSE5isyuM&libraries=places"></script>
+    </body>
 </html>
 
   
