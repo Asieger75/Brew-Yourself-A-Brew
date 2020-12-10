@@ -10,11 +10,12 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a id="logo-container" href="#" class="brand-logo">F3</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -70,7 +71,7 @@
             <h2 class="center brown-text"><i class="material-icons">local_hospital</i></h2>
             <h5 class="center">Health Resources</h5>
 
-            <p class="light">Being able to make sure your new pet is healthy and well-cared for is paramount after meeting them, so we have also provided a way to find local veterinarians or put supply shops on the way to acquire what you may need.</p>
+            <p class="light">Being able to make sure your new pet is healthy and well-cared for is paramount after meeting them, so we have also provided a way to find local veterinarians or supply shops to acquire what you may need.</p>
           </div>
         </div>
       </div>
@@ -97,12 +98,53 @@
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Start your Search!</h4>
-          <p class="left-align light">SEARCH CRITERIA FOR PET-FINDER SHALL GO HERE</p>
-        </div>
-      </div>
+          <div id="search-results"></div>
+          <p class="left-align light">SEARCH RESULTS:</p>
+
+           <!-- Dropdown Trigger -->
+  <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Select gender to search for</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">Male</a></li>
+    <li><a href="#!">Female</a></li>
+    <li><a href="#!">Doesn't Matter</a></li>
+  </ul>
+  
+      <!-- Dropdown Trigger -->
+      <a class='dropdown-trigger btn' href='#' data-target='dropdown2'>Select species to search for</a>
+
+      <!-- Dropdown Structure -->
+      <ul id='dropdown2' class='dropdown-content'>
+        <li><a href="#!">Dog</a></li>
+        <li><a href="#!">Cat</a></li>
+        <li><a href="#!">Dinosaur</a></li>
+        <li><a href="#!">Doesn't Matter</a></li>
+      </ul>
+
+      
+<a class="waves-effect waves-light btn"><i class="material-icons left" id="searchbtn">pets</i>Search!</a>
+      
 
     </div>
   </div>
+<!-- THIS DOESN'T WORK, STILL <script src="text">   document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('select');
+  var instances = M.FormSelect.init(elems, options);
+});
+</script>
+
+   test dropdown goes here
+  <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Select</label>
+  </div> -->
+
 
 
   <div class="parallax-container valign-wrapper">
@@ -157,6 +199,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="javascript/code.js"></script>
 
   </body>
 </html>
