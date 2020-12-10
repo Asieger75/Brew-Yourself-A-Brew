@@ -1,3 +1,8 @@
+
+//magic words go here//
+
+$('.dropdown-trigger').dropdown();
+
 var map, infoWindow;
 
 function initMap() {
