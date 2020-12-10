@@ -8,13 +8,14 @@
   
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
 </head>
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a id="logo-container" href="#" class="brand-logo">F3</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -70,7 +71,7 @@
             <h2 class="center brown-text"><i class="material-icons">local_hospital</i></h2>
             <h5 class="center">Health Resources</h5>
 
-            <p class="light">Being able to make sure your new pet is healthy and well-cared for is paramount after meeting them, so we have also provided a way to find local veterinarians or put supply shops on the way to acquire what you may need.</p>
+            <p class="light">Being able to make sure your new pet is healthy and well-cared for is paramount after meeting them, so we have also provided a way to find local veterinarians or supply shops to acquire what you may need.</p>
           </div>
         </div>
       </div>
@@ -97,14 +98,55 @@
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Start your Search!</h4>
-          <p class="left-align light">SEARCH CRITERIA FOR PET-FINDER SHALL GO HERE</p>
-        </div>
-        <button id='searchbtn'>SEARCH</button>
-        <div id='search-results'></div>
-      </div>
+
+          <div id="search-results"></div>
+          <p class="left-align light">SEARCH RESULTS:</p>
+
+           <!-- Dropdown Trigger -->
+  <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Select gender to search for</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">Male</a></li>
+    <li><a href="#!">Female</a></li>
+    <li><a href="#!">Doesn't Matter</a></li>
+  </ul>
+  
+      <!-- Dropdown Trigger -->
+      <a class='dropdown-trigger btn' href='#' data-target='dropdown2'>Select species to search for</a>
+
+      <!-- Dropdown Structure -->
+      <ul id='dropdown2' class='dropdown-content'>
+        <li><a href="#!">Dog</a></li>
+        <li><a href="#!">Cat</a></li>
+        <li><a href="#!">Dinosaur</a></li>
+        <li><a href="#!">Doesn't Matter</a></li>
+      </ul>
+
+      
+<a class="waves-effect waves-light btn"><i class="material-icons left" id="searchbtn">pets</i>Search!</a>
+      
+
 
     </div>
   </div>
+<!-- THIS DOESN'T WORK, STILL <script src="text">   document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('select');
+  var instances = M.FormSelect.init(elems, options);
+});
+</script>
+
+   test dropdown goes here
+  <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Select</label>
+  </div> -->
+
 
 
   <div class="parallax-container valign-wrapper">
@@ -119,33 +161,25 @@
   </div>
 
   <footer class="page-footer teal">
+      <div class="veth1">
+            <h1>Find a veterinarian near you! </h1>
+        </div>
+        
+        <input
+        id="pac-input"
+        class="controls"
+        type="text"
+        placeholder="Search Box"
+      />
+      <div id="map"></div>
+
+        <hr>
+          
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Group Bio</h5>
-          <p class="grey-text text-lighten-4">Hi! We're William, Maddison, Jerquanus and Josh, the makers of this site! We hope that this class project of ours can help you improve your life by introducing someone to love!</p>
-
-          <div id="map"></div>
-          
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="groupBio">
+          <h5>Group Bio</h5>
+          <p class="text-lighten-4">Hi! We're William, Maddison, Jerquanus and Josh, the makers of this site! We hope that this class project of ours can help you improve your life by introducing someone to love!</p>
         </div>
       </div>
     </div>
@@ -163,50 +197,13 @@
   <script src="js/materialize.js"></script> 
   <script src="js/init.js"></script>
   <script src="javascript/code.js"></script>
-
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcj42SoFm8w9wO8kM57zag4-FSE5isyuM&callback=initMap&libraries=&v=weekly"
-    defer
-  ></script>
-  <script src="API/api.js"></script>
-
-  <!-- <script type="text/javascript">
-    var queryURL = "https://api.rescuegroups.org/http/v2.json";
-    $.ajax({
-      url: queryURL,
-      method: "POST",
-      data: JSON.stringify({
-        apikey: "KAyzleqX",
-        objectType: "animals",
-        objectAction: "publicSearch",
-        search: {
-            resultStart: "0",
-            resultLimit: "10",
-            resultSort: "animalID",
-            resultOrder: "asc",
-            filters: [
-                {
-                    fieldName: "animalStatus",
-                    operation: "equals",
-                    criteria: "Available"
-                }
-            ],
-            filterProcessing: "1",
-            fields: [
-                "animalID", "animalName", "animalBreed", "animalPictures", "animalSex", "animalLocation", "animalSpecies",
-            ]
-        }
-      })
-    }).then(function(response) {
-      console.log(response);
-    })
-  </script> -->
-
-  
-
-
-  </body>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcj42SoFm8w9wO8kM57zag4-FSE5isyuM&callback=initAutocomplete&libraries=places&v=weekly"
+      defer
+    ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcj42SoFm8w9wO8kM57zag4-FSE5isyuM&libraries=places"></script>
+    </body>
 </html>
 
   
