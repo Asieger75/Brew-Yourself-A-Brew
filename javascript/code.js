@@ -1,4 +1,11 @@
 
+//magic words go here//
+
+$('.dropdown-trigger').dropdown();
+
+
+
+
 function initAutocomplete() {
     const map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: -33.8688, lng: 151.2195 },
@@ -34,6 +41,7 @@ function initAutocomplete() {
           console.log("Returned place contains no geometry");
           return;
         }
+
         const icon = {
           url: place.icon,
           size: new google.maps.Size(71, 71),
