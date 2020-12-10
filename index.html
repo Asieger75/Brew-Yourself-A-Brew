@@ -99,6 +99,8 @@
           <h4>Start your Search!</h4>
           <p class="left-align light">SEARCH CRITERIA FOR PET-FINDER SHALL GO HERE</p>
         </div>
+        <button id='searchbtn'>SEARCH</button>
+        <div id='search-results'></div>
       </div>
 
     </div>
@@ -167,6 +169,42 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcj42SoFm8w9wO8kM57zag4-FSE5isyuM&callback=initMap&libraries=&v=weekly"
     defer
   ></script>
+  <script src="API/api.js"></script>
+
+  <!-- <script type="text/javascript">
+    var queryURL = "https://api.rescuegroups.org/http/v2.json";
+    $.ajax({
+      url: queryURL,
+      method: "POST",
+      data: JSON.stringify({
+        apikey: "KAyzleqX",
+        objectType: "animals",
+        objectAction: "publicSearch",
+        search: {
+            resultStart: "0",
+            resultLimit: "10",
+            resultSort: "animalID",
+            resultOrder: "asc",
+            filters: [
+                {
+                    fieldName: "animalStatus",
+                    operation: "equals",
+                    criteria: "Available"
+                }
+            ],
+            filterProcessing: "1",
+            fields: [
+                "animalID", "animalName", "animalBreed", "animalPictures", "animalSex", "animalLocation", "animalSpecies",
+            ]
+        }
+      })
+    }).then(function(response) {
+      console.log(response);
+    })
+  </script> -->
+
+  
+
 
   </body>
 </html>
