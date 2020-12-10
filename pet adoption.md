@@ -1,0 +1,7 @@
+# Furry-Friend-Finder
+an app to help locate your new best bud
+We’ve created a pet adoption app that will assist users who want to find the breed gender age and location of what could be their new best friend!
+We created this app mainly because we wanted to put people in touch with adoptable pets.  
+
+#Find a Furry Friend an app to introduce you to what might become your new best friend!
+This application aims to help the user(s) search for a new pet as well as what type of animal choice to get(Cat or Dog), the animal's gender, breed and location. We have set up an API that will provide users with GoogleMap searches that will help users find locations for a pet store to find their new furry friend.
